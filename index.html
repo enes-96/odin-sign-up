@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Moon</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="left-side">
+        <h1 class="logo">M00N</h1>
+      </div>
+      <div class="right-side">
+        <p class="form-descr">
+          This is not a real online service! You know you need something <br />
+          like this in your life to help you realize your deepest dreams. <br />
+          Sign up now to get started.
+        </p>
+        <p class="quote">You know you want to.</p>
+        <form action="/" method="get" onsubmit="return verifyPassword()">
+          <div class="inputs">
+            <label for="first_name">First Name</label>
+            <input
+              type="text"
+              id="first_name"
+              name="first_name"
+              placeholder="First Name"
+              required
+            />
+          </div>
+          <div class="inputs">
+            <label for="last_name">Last Name</label>
+            <input
+              type="text"
+              id="last_name"
+              name="last_name"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <div class="inputs">
+            <label for="user_email">Email</label>
+            <input
+              type="email"
+              name="user_email"
+              id="user_email"
+              placeholder="your@email.com"
+              required
+            />
+          </div>
+          <div class="inputs">
+            <label for="user_number">Phone Number</label>
+            <input
+              type="number"
+              name="user_number"
+              id="user_number"
+              placeholder="555-2401-9099-82"
+              required
+            />
+          </div>
+          <div class="inputs">
+            <label for="user_password">Password</label>
+            <input
+              class="password"
+              type="password"
+              name="user_password"
+              id="user_password"
+              minlength="4"
+              max="16"
+              placeholder="password"
+              required
+            />
+          </div>
+          <div class="inputs">
+            <label for="user_confirm_password">Confirm Password</label>
+            <input
+              class="password-copy"
+              type="password"
+              name="user_password"
+              id="user_password"
+              minlength="4"
+              max="16"
+              placeholder="password"
+              required
+            />
+          </div>
+          <button
+            class="btn"
+            type="submit"
+            onsubmit="return passwordCheck()"
+            onclick="passwordCheck()"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
